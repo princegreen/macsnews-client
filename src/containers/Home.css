@@ -1,0 +1,18 @@
+.Home .lander {
+  text-align: center;
+}
+
+.Home .lander h1 {
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+.Home .lander p {
+  color: #999;
+}
+
+.Home .GridList {
+  max-width: 500px;
+  margin: auto;
+}
+
