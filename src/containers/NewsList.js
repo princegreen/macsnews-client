@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 export default class NewsList extends Component {
 	render() {
 		return (
+			
 		);
 	}
 }
