@@ -1,0 +1,10 @@
+.NewsList .header{
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+.NewsList .MyList {
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+}

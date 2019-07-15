@@ -11,6 +11,11 @@
   color: #999;
 }
 
+.Home .lander .newspaper {
+  margin-top: 20px;
+  max-width: 50px;
+}
+
 .Home .GridList {
   max-width: 500px;
   margin: auto;

@@ -5,6 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import cardData from "./carddata"
 import { makeStyles } from '@material-ui/core/styles';
+import newspaper from './newspaper.svg';
 
 const styles = {
   root: {
@@ -27,6 +28,7 @@ export default class Home extends Component {
     return (
       <div className="Home">
         <div className="lander">
+		  <img src={newspaper} className="newspaper" alt="Home" />
           <h1>Macs News</h1>
           <p>News Aggregator</p>
         </div>
@@ -42,7 +44,7 @@ export default class Home extends Component {
 			))}
 		  </GridList>
 		  </div>
-      </div>
+	</div>
     );
   }
 }
