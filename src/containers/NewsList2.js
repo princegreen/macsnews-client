@@ -14,12 +14,43 @@ export default class NewsList extends Component {
 	constructor(){
 		super();
 		this.state = {
-		
-		}
+			error: null,
+			isLoaded: false,
+			articles: []
+		};
+	}
+	
+	componentDidMount() {
+		fetch("https://newsapi.org/v2/everything?apiKey=a7f3bf35a52f4528ae31846e36e3df55&q=Nintendo&from=2019-07-31&sortBy=popularity")
+		  .then(res => res.json())
+		  .then(
+			(result) => {
+			  this.setState({
+				isLoaded: true,
+				articles: result.articles
+			  });
+			},
+			// Note: it's important to handle errors here
+			// instead of a catch() block so that we don't swallow
+			// exceptions from actual bugs in components.
+			(error) => {
+			  this.setState({
+				isLoaded: true,
+				error
+			  });
+			}
+		  )
+	}
 	
 	
 	
 	render() {
+		const { error, isLoaded, articles } = this.state;
+		if (error) {
+		  return <div>Error: you suck</div>;
+		} else if (!isLoaded) {
+		  return <div>Loading...</div>;
+		} else {
 		return (
 			<div className="NewsList">
 				<div className="header">
