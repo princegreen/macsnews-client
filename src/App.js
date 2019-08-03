@@ -25,14 +25,10 @@ class App extends Component{
 	render() {
 		return (
 		<div className="App">
-
 			<MuiThemeProvider theme={theme}>
 				<div className="AppBar">
 				<AppBar position="fixed" color='primary' >		   
 					<Toolbar>
-						<IconButton style={{color: 'white' }}>
-							<MenuIcon />
-						</IconButton>
 						<Button component={Link} to="/"  style={{ textDecoration: 'none', color: 'white' }}>Macs News</Button>
 					</Toolbar>
 				</AppBar>	

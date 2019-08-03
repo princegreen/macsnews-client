@@ -6,6 +6,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import cardData from "./carddata"
 import { makeStyles } from '@material-ui/core/styles';
 import newspaper from './newspaper.svg';
+import { Link } from "react-router-dom";
 
 const styles = {
   root: {
@@ -30,17 +31,17 @@ export default class Home extends Component {
         <div className="lander">
 		  <img src={newspaper} className="newspaper" alt="Home" />
           <h1>Macs News</h1>
-          <p>News Aggregator</p>
+          <p>My favourite news</p>
         </div>
 		<div className="GridList">
 			<GridList style={styles.gridList}>
 			{cardData.map(tile => (
-				<GridListTile key={tile.img} style={styles.root} >
+				<GridListTile key={tile.img} style={styles.root} component={Link} to={"/NewsList/" + tile.title}>
 					<img src={tile.img} alt={tile.title} width="200"/>
 					<GridListTileBar
 					  title={tile.title}
 					/>
-			  </GridListTile>
+			  </GridListTile>			  
 			))}
 		  </GridList>
 		  </div>

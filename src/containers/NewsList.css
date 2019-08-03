@@ -8,3 +8,13 @@
   margin: auto;
   max-width: 1000px;
 }
+
+.NewsList .myButton {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Error .myButton {
+  text-align: center;
+  margin-top: 50px;
+}
