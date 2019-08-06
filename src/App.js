@@ -36,6 +36,8 @@ class App extends Component{
 			<Routes />
 			</MuiThemeProvider>
 			<div className="Sources">  
+			  <h4>News available via (get your API key at) NewsAPI.org</h4>
+			  <a href="https://newsapi.org" title="NewsAPI.org">NewsAPI.org</a>
 			  <div> Icons made by </div>
 				<div><a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware </a>
 					from </div>
