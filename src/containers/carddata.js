@@ -15,12 +15,12 @@ const cardData = [
     title: 'Cloud'
   },
   {
-    img: thepeg,
-    title: 'Winnipeg'
-  },
-  {
     img: nin,
     title: 'Nintendo'
+  },
+  {
+    img: thepeg,
+    title: 'Winnipeg'
   },
   {
     img: anime,
