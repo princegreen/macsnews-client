@@ -4,6 +4,7 @@ import nin from './Nintendo.png';
 import news from './newspaper.png';
 import anime from './Anime.png';
 import opera from './Opera.png';
+import dev from './Developer.png';
 
 const cardData = [
   {
@@ -21,6 +22,10 @@ const cardData = [
   {
     img: thepeg,
     title: 'Winnipeg'
+  },
+  {
+    img: dev,
+    title: 'Developer'
   },
   {
     img: anime,
