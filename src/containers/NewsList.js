@@ -12,6 +12,8 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
+const apiKey = process.env.REACT_APP_NEWSAPI_KEY;
+
 export default class NewsList extends Component {
 	
 	constructor(props){
@@ -20,7 +22,7 @@ export default class NewsList extends Component {
 			error: false,
 			isLoaded: false,
 			articles: [],
-			apiKey: "",
+			apiKey: apiKey,
 			query: this.props.match.params.id,
 			mylink: null,
 			myfromdate: null,
@@ -90,10 +92,6 @@ export default class NewsList extends Component {
 	{
 		event.preventDefault();
 		try{
-//			this.setState({
-//				error: false
-//			});
-//			this.forceUpdate();
 			this.reFetch();
 			this.setState({
 				error: false,

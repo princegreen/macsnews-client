@@ -30,6 +30,10 @@ class App extends Component{
 				<AppBar position="fixed" color='primary' >		   
 					<Toolbar>
 						<Button component={Link} to="/"  style={{ textDecoration: 'none', color: 'white' }}>Macs News</Button>
+						<div className="App-leftlinks" style={{marginLeft: 'auto'}}>
+							<Button component={Link} to="/" color='secondary' style={{fontSize: '16px' }}>News</Button>
+							<Button component={Link} to="/NASAPoD" color='secondary' style={{fontSize: '16px' }}>NASA PoD</Button>
+						</div>
 					</Toolbar>
 				</AppBar>	
 				</div>
