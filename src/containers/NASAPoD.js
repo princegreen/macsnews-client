@@ -14,21 +14,22 @@ const headers = {
 	'x-rapidapi-host': process.env.REACT_APP_NASAPOD_HOST,
 	'x-rapidapi-key': process.env.REACT_APP_NASAPOD_KEY
 };
+
+const nasapodlink = process.env.REACT_APP_NASAPOD_LINK;
 	
 
 export default class Home extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			mylink: null,
+			mylink: nasapodlink,
 			isLoaded: null,
 			PoD: null,
 		}
 	}
 	
 async componentDidMount() {
-		this.mylink = "https://NasaAPIdimasV1.p.rapidapi.com/getPictureOfTheDay";
-		await fetch(this.mylink, {
+		await fetch(nasapodlink, {
 			method: 'POST',
 			headers,
 			}).then(this.handleErrors)
