@@ -193,18 +193,6 @@ export default class NewsList extends Component {
 					))}
 					</List>
 				</div>
-				<div className="myButton">
-					<Button variant="contained" onClick={this.setAPIKey}>Set API Key</Button>
-				</div>
-				<div className="mytextfield">
-				    <TextField
-						id="apiKey"
-						label="API Key"
-						value={this.state.apiKey}
-						onChange={this.handleNewItemChange('apiKey')}
-						margin='normal'>
-					</TextField>
-				</div>
 			</div>
 		);
 	}

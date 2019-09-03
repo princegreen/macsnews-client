@@ -75,6 +75,8 @@ async componentDidMount() {
 		  <p>{PoD.date}</p>
 		  <h3>Copyright</h3>
 		  <p>{PoD.copyright}</p>
+		  <h3>URL</h3>
+		  <a href={PoD.url} title="PoD URL">PoD URL</a>
         </div>
       </div>
     );
