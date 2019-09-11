@@ -5,11 +5,16 @@ import news from './newspaper.png';
 import anime from './Anime.png';
 import opera from './Opera.png';
 import dev from './Developer.png';
+import can from './canada.png';
 
 const cardData = [
   {
     img: news,
     title: 'Headlines'
+  },
+  {
+    img: can,
+    title: 'Canada'
   },
   {
     img: cloud,

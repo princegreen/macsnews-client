@@ -46,6 +46,9 @@ export default class NewsList extends Component {
 		this.myfromdate = myyear + "-" + mymonth + "-" + myday;
 		//set the link to use to access the News API
 		if (this.state.query == "Headlines") {
+			this.mylink = "https://newsapi.org/v2/top-headlines?apiKey=" + this.state.apiKey + "&language=en";
+		}
+		else if (this.state.query == "Canada") {
 			this.mylink = "https://newsapi.org/v2/top-headlines?apiKey=" + this.state.apiKey + "&country=ca";
 		}
 		else {
