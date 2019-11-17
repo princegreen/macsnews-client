@@ -5,8 +5,12 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import cardData from "./carddata"
 import { makeStyles } from '@material-ui/core/styles';
-import newspaper from './newspaper.svg';
+import newspaper from './newspapericon.svg';
+import { ReactComponent as MyNewspaper} from './newspaper.svg';
 import { Link } from "react-router-dom";
+import {Spring, config} from 'react-spring/renderprops'
+import SplitText from 'react-pose-text';
+import styled from 'styled-components';
 
 const styles = {
   root: {
@@ -23,17 +27,51 @@ const styles = {
     color: 'rgba(255, 255, 255, 0.54)',
   }
 };
+  
+const charPoses = {
+	  exit: {opacity: 0, x:20},
+	  enter: {
+		  opacity: 1,
+		  x: 0,
+		  delay: ({ charIndex }) => charIndex * 50
+	  }
+};
+
+const StyledIcon = styled.div`
+   margin: auto;
+   @keyframes draw {
+      from { 
+          stroke-dashoffset: 1500; 
+      }
+      to {  
+         stroke-dashoffset: 0; 
+      }
+   };
+   
+  path {
+      stroke-dasharray: 1500;
+      animation-name: draw;
+      animation-duration: 10s;
+      animation-fill-mode: forwards;
+   }
+ `;
 
 export default class Home extends Component {
   render() {
     return (
       <div className="Home">
         <div className="lander">
-		  <img src={newspaper} className="newspaper" alt="Home" />
-          <h1>Macs News</h1>
-          <p>My favourite news</p>
+				<StyledIcon>
+					<MyNewspaper />
+				</StyledIcon>
+		  <div className="splittext">
+				<SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
+					MACS NEWS
+				</SplitText>
+		  </div>
         </div>
 		<div className="GridList">
+			<h4 style={{ color: '#546e7a' }}>Here are your lates headlines...</h4>
 			<GridList style={styles.gridList}>
 			{cardData.map(tile => (
 				<GridListTile key={tile.img} style={styles.root} component={Link} to={"/NewsList/" + tile.title}>

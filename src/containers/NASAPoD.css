@@ -1,8 +1,21 @@
+.NASAPoD .lander .splittext{
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  font-style: oblique;
+  margin-bottom: 20px;
+  color: #546e7a;
+}
+
 .NASAPoD .lander PoDImg {
   max-width: 100%;
   height: auto;
 }
 
+.NASAPoD .lander {
+  color: #546e7a;
+}
+
 .NASAPoD .lander .explanation {
-  max-width: 50px;
+
 }

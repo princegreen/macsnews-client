@@ -1,0 +1,35 @@
+.Mylinks .lander {
+  text-align: center;
+}
+
+.Mylinks .lander .splittext{
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  font-style: oblique;
+  margin-bottom: 20px;
+}
+
+.Mylinks .lander h1 {
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+.Mylinks .lander p {
+  color: #999;
+}
+
+.Mylinks .lander .mylink {
+  margin-top: 20px;
+  max-width: 100px;
+}
+
+.Mylinks .Paper {
+  max-width: 200px;
+  margin: auto
+}
+
+.Mylinks .Paper h4 {
+  color: #999;
+}
+

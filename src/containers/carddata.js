@@ -6,6 +6,7 @@ import anime from './Anime.png';
 import opera from './Opera.png';
 import dev from './Developer.png';
 import can from './canada.png';
+import mex from './Mexico.png';
 
 const cardData = [
   {
@@ -15,6 +16,10 @@ const cardData = [
   {
     img: can,
     title: 'Canada'
+  },
+  {
+    img: mex,
+    title: 'Mexico'
   },
   {
     img: cloud,

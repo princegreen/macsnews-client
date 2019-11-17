@@ -51,6 +51,9 @@ export default class NewsList extends Component {
 		else if (this.state.query == "Canada") {
 			this.mylink = "https://newsapi.org/v2/top-headlines?apiKey=" + this.state.apiKey + "&country=ca";
 		}
+		else if (this.state.query == "Mexico") {
+			this.mylink = "https://newsapi.org/v2/top-headlines?apiKey=" + this.state.apiKey + "&country=mx";
+		}
 		else {
 		this.mylink = "https://newsapi.org/v2/everything?apiKey=" + this.state.apiKey + "&q=" + this.state.query + "&from=" + this.myfromdate + "&to=" + this.mytodate + "&sortBy=popularity&language=en";
 		}

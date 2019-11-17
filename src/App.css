@@ -1,9 +1,14 @@
 .App {
   text-align: center;
+  background-color: lightgrey;
 }
 
 .App .AppBar {
   padding-bottom: 80px;
+}
+
+.App .AppBar .icon{
+  max-width: 100px;
 }
 
 .Sources {

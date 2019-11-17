@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./Home.css";
+import "./NASAPoD.css";
 import IconButton from '@material-ui/core/IconButton';
+import SplitText from 'react-pose-text';
 
 const sectionStyle = {
   width: "100%",
@@ -13,6 +14,15 @@ const sectionStyle = {
 const headers = {
 	'x-rapidapi-host': process.env.REACT_APP_NASAPOD_HOST,
 	'x-rapidapi-key': process.env.REACT_APP_NASAPOD_KEY
+};
+
+const charPoses = {
+	  exit: {opacity: 0, x:20},
+	  enter: {
+		  opacity: 1,
+		  x: 0,
+		  delay: ({ charIndex }) => charIndex * 50
+	  }
 };
 
 const nasapodlink = process.env.REACT_APP_NASAPOD_LINK	
@@ -65,10 +75,16 @@ async componentDidMount() {
     return (
 	  <div className="NASAPoD">
 		<div className="lander">
-          <h1>NASA Picture of the Day</h1>
+		  <div className="splittext">
+				<SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
+					NASA PICTURE OF THE DAY
+				</SplitText>
+		  </div>
 		  <h3>Title</h3>
 		  <p>{PoD.title}</p>
-		  <img className="PoDImg" src={PoD.hdurl}></img>
+		  <div className="PoDImg" >
+		  <img src={PoD.hdurl}></img>
+		  </div>
 		  <h3>Explanation</h3>
 		  <p className="explanation">{PoD.explanation}</p>
 		  <h3>Photo Data</h3>

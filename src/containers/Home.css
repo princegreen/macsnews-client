@@ -1,5 +1,15 @@
 .Home .lander {
   text-align: center;
+  margin-top: 10px;
+}
+
+.Home .lander .splittext{
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  font-style: oblique;
+  color: #009688;
+  margin-bottom: 20px;
 }
 
 .Home .lander h1 {
@@ -13,7 +23,12 @@
 
 .Home .lander .newspaper {
   margin-top: 20px;
-  max-width: 50px;
+  margin: auto;
+  max-width: 100px;
+}
+
+.Home .lander .newspaper npicon {
+
 }
 
 .Home .GridList {
@@ -21,3 +36,11 @@
   margin: auto;
 }
 
+@keyframes draw_in {
+   from: {
+      stroke-dashoffset: 1000;
+   }
+   to: {
+      stroke-dashoffset: 0;
+   }
+}

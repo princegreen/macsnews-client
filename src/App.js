@@ -11,11 +11,12 @@ import IconButton from '@material-ui/core/IconButton';
 import Routes from "./Routes";
 import MenuIcon from '@material-ui/icons/Menu';
 import TemporaryDrawer from "./drawer.js";
+import newspaper from './containers/newspapericon.svg';
 
 const theme = createMuiTheme({
   palette: {
     primary: {main: '#01579b',},
-	secondary: {main: '#FAFAFA',},
+	secondary: {main: '#eceff1',},
   },
 });
 
@@ -27,15 +28,22 @@ class App extends Component{
 		<div className="App">
 			<MuiThemeProvider theme={theme}>
 				<div className="AppBar">
-				<AppBar position="fixed" color='primary' >		   
-					<Toolbar>
-						<Button component={Link} to="/"  style={{ textDecoration: 'none', color: 'white' }}>Macs News</Button>
-						<div className="App-leftlinks" style={{marginLeft: 'auto'}}>
-							<Button component={Link} to="/" color='secondary' style={{fontSize: '16px' }}>News</Button>
-							<Button component={Link} to="/NASAPoD" color='secondary' style={{fontSize: '16px' }}>NASA PoD</Button>
-						</div>
-					</Toolbar>
-				</AppBar>	
+					<AppBar position="fixed" color='primary' >		   
+						<Toolbar>
+							<Button component={Link} to="/">
+								<div className="icon" style={{ color: '#eceff1' }}>
+									<img src={newspaper} className="newspaper" alt="Home" style={{ maxWidth: '40px' }}/>
+									<br></br>
+									MACS NEWS
+								</div>
+							</Button>
+							<div className="App-leftlinks" style={{marginLeft: 'auto'}}>
+								<Button component={Link} to="/" color='secondary' style={{fontSize: '16px' }}>News</Button>
+								<Button component={Link} to="/NASAPoD" color='secondary' style={{fontSize: '16px' }}>NASA PoD</Button>
+								<Button component={Link} to="/Mylinks" color='secondary' style={{fontSize: '16px' }}>My Links</Button>
+							</div>
+						</Toolbar>
+					</AppBar>	
 				</div>
 			<Routes />
 			</MuiThemeProvider>
