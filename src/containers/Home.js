@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import {Spring, config} from 'react-spring/renderprops'
 import SplitText from 'react-pose-text';
 import styled from 'styled-components';
+import Paper from '@material-ui/core/Paper';
 
 const styles = {
   root: {
@@ -60,7 +61,8 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <div className="lander">
+        <Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
+		<div className="lander">
 				<StyledIcon>
 					<MyNewspaper />
 				</StyledIcon>
@@ -69,9 +71,11 @@ export default class Home extends Component {
 					MACS NEWS
 				</SplitText>
 		  </div>
+		  <h4 style={{ color: '#4db6ac' }}>Here are your latest headlines...</h4>
         </div>
+		</Paper>
 		<div className="GridList">
-			<h4 style={{ color: '#546e7a' }}>Here are your lates headlines...</h4>
+			<Paper style={{ backgroundColor: '#eeeeee'}}>
 			<GridList style={styles.gridList}>
 			{cardData.map(tile => (
 				<GridListTile key={tile.img} style={styles.root} component={Link} to={"/NewsList/" + tile.title}>
@@ -82,6 +86,7 @@ export default class Home extends Component {
 			  </GridListTile>			  
 			))}
 		  </GridList>
+		  </Paper>
 		  </div>
 	</div>
     );

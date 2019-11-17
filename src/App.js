@@ -12,11 +12,13 @@ import Routes from "./Routes";
 import MenuIcon from '@material-ui/icons/Menu';
 import TemporaryDrawer from "./drawer.js";
 import newspaper from './containers/newspapericon.svg';
+import Paper from '@material-ui/core/Paper';
 
 const theme = createMuiTheme({
   palette: {
     primary: {main: '#01579b',},
 	secondary: {main: '#eceff1',},
+	mainGradient: "linear-gradient(to bottom right, #01579b, #a7ffeb)",
   },
 });
 
@@ -28,7 +30,7 @@ class App extends Component{
 		<div className="App">
 			<MuiThemeProvider theme={theme}>
 				<div className="AppBar">
-					<AppBar position="fixed" color='primary' >		   
+					<AppBar position="fixed" style={{ background: theme.palette.mainGradient }}>		   
 						<Toolbar>
 							<Button component={Link} to="/">
 								<div className="icon" style={{ color: '#eceff1' }}>
@@ -47,8 +49,9 @@ class App extends Component{
 				</div>
 			<Routes />
 			</MuiThemeProvider>
+			<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
 			<div className="Sources">  
-			  <h4>News available via (get your API key at) NewsAPI.org</h4>
+			  <h4 style={{ color: '#616161' }}>News available via (get your API key at) NewsAPI.org</h4>
 			  <a href="https://newsapi.org" title="NewsAPI.org">NewsAPI.org</a>
 			  <div> Icons made by </div>
 				<div><a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware </a>
@@ -56,7 +59,10 @@ class App extends Component{
 				<div><a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com </a>
 					 which is licensed by </div>
 				<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC 3.0 BY</a>
+				<div>I customized the wicked cool background on my homepage at</div>
+				<a href="http://SVGBackgrounds.com" title="SVGBackgrounds.com">SVGBackgrounds.com</a>
 			</div>
+			</Paper>
 		</div>
 		);
 	}

@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-  background-color: lightgrey;
+  background-image: url("Vanishing-Stripes.svg");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  animation: animatedBackground 40s linear infinite;
 }
 
 .App .AppBar {
@@ -13,6 +16,7 @@
 
 .Sources {
   font-size: 10px;
+  color: #616161;
 }
 
 .App-logo {
@@ -43,4 +47,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
 }

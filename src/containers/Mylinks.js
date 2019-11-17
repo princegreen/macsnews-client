@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Mylinks.css";
-import mylink from './link.png'
+import { ReactComponent as MyLink} from './link.svg'
 import { Link } from "react-router-dom";
 import Paper from '@material-ui/core/Paper';
 import SplitText from 'react-pose-text';
@@ -39,7 +39,9 @@ export default class Mylinks extends Component {
     return (
       <div className="Mylinks">
         <div className="lander">
-			<img src={mylink} className="mylink" alt="Mylinks" />
+				<StyledIcon>
+					<MyLink />
+				</StyledIcon>
 			<div className="splittext">
 				<SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
 					MY LINKS

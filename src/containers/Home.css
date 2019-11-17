@@ -8,8 +8,9 @@
   font-weight: 600;
   font-size: 40px;
   font-style: oblique;
-  color: #009688;
+  color: #4db6ac;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 8px #424242;
 }
 
 .Home .lander h1 {
@@ -25,10 +26,6 @@
   margin-top: 20px;
   margin: auto;
   max-width: 100px;
-}
-
-.Home .lander .newspaper npicon {
-
 }
 
 .Home .GridList {

@@ -3,6 +3,12 @@
   margin: auto;
   padding-top: 20px;
 }
+
+.NewsList .header h1{
+  color: #616161;
+  text-shadow: 2px 2px 8px #424242;
+}
+
 .NewsList .MyList {
   text-align: center;
   margin: auto;
