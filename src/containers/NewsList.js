@@ -1,9 +1,7 @@
-import React, { Component, Fragment } from "react";
-import Popup from 'react-popup';
+import React, { Component } from "react";
 import "./NewsList.css";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Divider from '@material-ui/core/Divider';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
@@ -45,13 +43,13 @@ export default class NewsList extends Component {
 		myday = mydate.getDate().toString();
 		this.myfromdate = myyear + "-" + mymonth + "-" + myday;
 		//set the link to use to access the News API
-		if (this.state.query == "Headlines") {
+		if (this.state.query === "Headlines") {
 			this.mylink = "https://newsapi.org/v2/top-headlines?apiKey=" + this.state.apiKey + "&language=en";
 		}
-		else if (this.state.query == "Canada") {
+		else if (this.state.query === "Canada") {
 			this.mylink = "https://newsapi.org/v2/top-headlines?apiKey=" + this.state.apiKey + "&country=ca";
 		}
-		else if (this.state.query == "Mexico") {
+		else if (this.state.query === "Mexico") {
 			this.mylink = "https://newsapi.org/v2/top-headlines?apiKey=" + this.state.apiKey + "&country=mx";
 		}
 		else {
@@ -111,7 +109,7 @@ export default class NewsList extends Component {
 	}
 	
 	reFetch(){
-	if (this.state.query == "Headlines") {
+	if (this.state.query === "Headlines") {
 			this.mylink = "https://newsapi.org/v2/top-headlines?apiKey=" + this.state.apiKey + "&country=ca";
 		}
 	else {
@@ -144,6 +142,7 @@ export default class NewsList extends Component {
 		if (error) {
 		  return (
 			<div className="Error">
+			<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
 			<div>The API is not loading. Have you set your API Key?</div>
 				<div className="myButton">
 					<Button variant="contained" onClick={this.setAPIKey}>Set API Key</Button>
@@ -157,6 +156,7 @@ export default class NewsList extends Component {
 						margin='normal'>
 					</TextField>
 				</div>
+			</Paper>
 			</div>
 		  );
 		} else if (!isLoaded) {
@@ -165,7 +165,9 @@ export default class NewsList extends Component {
 		return (
 			<div className="NewsList">
 				<div className="header">
-				<h1>{this.state.query}</h1>
+					<Paper style={{ width: 1000, margin: 'auto', backgroundColor: '#eeeeee' }}>
+						<h1>{this.state.query}</h1>
+					</Paper>
 				</div>
 				<div className="MyList">
 					<List>

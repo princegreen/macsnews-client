@@ -1,15 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./NASAPoD.css";
-import IconButton from '@material-ui/core/IconButton';
 import SplitText from 'react-pose-text';
-
-const sectionStyle = {
-  width: "100%",
-  height: "600px",
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-}; 
+import Paper from '@material-ui/core/Paper';
 
 const headers = {
 	'x-rapidapi-host': process.env.REACT_APP_NASAPOD_HOST,
@@ -66,7 +58,9 @@ async componentDidMount() {
 		if (error) {
 		  return (
 			<div className="Error">
-			<div>The API is not loading. Have you set your API Key?</div>
+			<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
+					<div>The API is not loading. Have you set your API Key?</div>
+			</Paper>
 			</div>
 		  );
 		} else if (!isLoaded) {
@@ -75,6 +69,7 @@ async componentDidMount() {
     return (
 	  <div className="NASAPoD">
 		<div className="lander">
+		  <Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
 		  <div className="splittext">
 				<SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
 					NASA PICTURE OF THE DAY
@@ -82,9 +77,11 @@ async componentDidMount() {
 		  </div>
 		  <h3>Title</h3>
 		  <p>{PoD.title}</p>
+		  </Paper>
 		  <div className="PoDImg" >
-		  <img src={PoD.hdurl}></img>
+		  <img src={PoD.hdurl} alt={PoD.title}></img>
 		  </div>
+		  <Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
 		  <h3>Explanation</h3>
 		  <p className="explanation">{PoD.explanation}</p>
 		  <h3>Photo Data</h3>
@@ -93,6 +90,7 @@ async componentDidMount() {
 		  <p>{PoD.copyright}</p>
 		  <h3>URL</h3>
 		  <a href={PoD.url} title="PoD URL">PoD URL</a>
+		  </Paper>
         </div>
       </div>
     );

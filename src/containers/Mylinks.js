@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./Mylinks.css";
 import { ReactComponent as MyLink} from './link.svg'
-import { Link } from "react-router-dom";
 import Paper from '@material-ui/core/Paper';
 import SplitText from 'react-pose-text';
 import styled from 'styled-components';
@@ -39,6 +38,7 @@ export default class Mylinks extends Component {
     return (
       <div className="Mylinks">
         <div className="lander">
+		<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
 				<StyledIcon>
 					<MyLink />
 				</StyledIcon>
@@ -46,23 +46,23 @@ export default class Mylinks extends Component {
 				<SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
 					MY LINKS
 				</SplitText>
+			</div>
+		  </Paper>
 		  </div>
 			<div className="Paper">
-				<Paper>
-					<a href="http://www.wikipedia.org" target="_blank" title="Wikipedia">Wikipedia</a>
+				<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
+					<a href="http://www.wikipedia.org" target="_blank" rel="noopener noreferrer" title="Wikipedia">Wikipedia</a>
 					<br></br>					
 					<br></br>
-					<a href="http://www.sacredpie.com" target="_blank" title="Sacred Pie">Sacred Pie</a>
+					<a href="http://www.sacredpie.com" target="_blank" rel="noopener noreferrer" title="Sacred Pie">Sacred Pie</a>
 					<br></br>
 					<br></br>
-					<a href="http://www.shatteredstarlight.com" target="_blank" title="Shattered Starlight">Shattered Starlight</a>
+					<a href="http://www.shatteredstarlight.com" target="_blank" rel="noopener noreferrer" title="Shattered Starlight">Shattered Starlight</a>
 					<br></br>
 					<br></br>	
-					<a href="http://www.feywinds.com" target="_blank" title="Fey Winds">Fey Winds</a>
+					<a href="http://www.feywinds.com" target="_blank" rel="noopener noreferrer" title="Fey Winds">Fey Winds</a>
 				</Paper>
-
 			</div>
-       </div>
 	</div>
     );
   }

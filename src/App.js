@@ -1,16 +1,11 @@
-import React, { Component, Fragment } from "react";
-import { Link, withRouter } from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import * as Colors from '@material-ui/core/colors/';
-import IconButton from '@material-ui/core/IconButton';
 import Routes from "./Routes";
-import MenuIcon from '@material-ui/icons/Menu';
-import TemporaryDrawer from "./drawer.js";
 import newspaper from './containers/newspapericon.svg';
 import Paper from '@material-ui/core/Paper';
 

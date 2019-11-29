@@ -4,11 +4,8 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import cardData from "./carddata"
-import { makeStyles } from '@material-ui/core/styles';
-import newspaper from './newspapericon.svg';
 import { ReactComponent as MyNewspaper} from './newspaper.svg';
 import { Link } from "react-router-dom";
-import {Spring, config} from 'react-spring/renderprops'
 import SplitText from 'react-pose-text';
 import styled from 'styled-components';
 import Paper from '@material-ui/core/Paper';
