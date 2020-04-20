@@ -61,6 +61,9 @@ export default class Mylinks extends Component {
 					<br></br>
 					<br></br>	
 					<a href="http://www.feywinds.com" target="_blank" rel="noopener noreferrer" title="Fey Winds">Fey Winds</a>
+					<br></br>
+					<br></br>	
+					<a href="http://www.xkcd.com" target="_blank" rel="noopener noreferrer" title="XKCD">XKCD</a>
 				</Paper>
 			</div>
 	</div>
