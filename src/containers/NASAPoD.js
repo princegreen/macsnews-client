@@ -31,7 +31,7 @@ export default class Home extends Component {
 	
 async componentDidMount() {
 		await fetch(nasapodlink, {
-			method: 'POST',
+			method: 'GET',
 			headers,
 			}).then(this.handleErrors)
 			.then(res => res.json())

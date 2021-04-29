@@ -64,6 +64,12 @@ export default class Mylinks extends Component {
 					<br></br>
 					<br></br>	
 					<a href="http://www.xkcd.com" target="_blank" rel="noopener noreferrer" title="XKCD">XKCD</a>
+					<br></br>
+					<br></br>	
+					<a href="https://www.gov.mb.ca/covid19/updates/index.html" target="_blank" rel="noopener noreferrer" title="COVID Manitoba">COVID Manitoba</a>
+					<br></br>
+					<br></br>	
+					<a href="https://www.gov.mb.ca/covid19/vaccine/queue-calculator.html" target="_blank" rel="noopener noreferrer" title="COVID Vaccine Calculator Manitoba">COVID Vaccine Calculator Manitoba</a>
 				</Paper>
 			</div>
 	</div>
