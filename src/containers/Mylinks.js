@@ -69,10 +69,8 @@ export default class Mylinks extends Component {
 					<a href="https://www.gov.mb.ca/covid19/updates/index.html" target="_blank" rel="noopener noreferrer" title="COVID Manitoba">COVID Manitoba</a>
 					<br></br>
 					<br></br>
-					<a href="https://www.gov.mb.ca/covid19/vaccine/eligibility-criteria.html" target="_blank" rel="noopener noreferrer" title="COVID Manitoba Eligibility">COVID Manitoba Eligibility</a>
+					<a href="https://www.gov.mb.ca/covid19/vaccine/" target="_blank" rel="noopener noreferrer" title="COVID Manitoba Vaccination Stats">COVID Manitoba Vaccination Stats</a>
 					<br></br>
-					<br></br>						
-					<a href="https://www.gov.mb.ca/covid19/vaccine/queue-calculator.html" target="_blank" rel="noopener noreferrer" title="COVID Vaccine Calculator Manitoba">COVID Vaccine Calculator Manitoba</a>
 				</Paper>
 			</div>
 	</div>
