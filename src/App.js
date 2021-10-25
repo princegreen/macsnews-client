@@ -45,7 +45,7 @@ class App extends Component{
 				</div>
 			<Routes />
 			</MuiThemeProvider>
-			<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
+			<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#2A2A2A' }}>
 			<div className="Sources">  
 			  <h4 style={{ color: '#616161' }}>News available via (get your API key at) NewsAPI.org</h4>
 			  <a href="https://newsapi.org" title="NewsAPI.org">NewsAPI.org</a>

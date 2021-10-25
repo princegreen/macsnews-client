@@ -58,7 +58,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
+        <Paper style={{ width: 500, margin: 'auto', backgroundColor: '#2A2A2A' }}>
 		<div className="lander">
 				<StyledIcon>
 					<MyNewspaper />
@@ -72,7 +72,7 @@ export default class Home extends Component {
         </div>
 		</Paper>
 		<div className="GridList">
-			<Paper style={{ backgroundColor: '#eeeeee'}}>
+			<Paper style={{ backgroundColor: '#2A2A2A'}}>
 			<GridList style={styles.gridList}>
 			{cardData.map(tile => (
 				<GridListTile key={tile.img} style={styles.root} component={Link} to={"/NewsList/" + tile.title}>

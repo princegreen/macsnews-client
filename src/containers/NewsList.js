@@ -138,11 +138,12 @@ export default class NewsList extends Component {
 	}
 	
 	render() {
+	//#eeeeee is previous white color for background
 		const { error, isLoaded, articles } = this.state;
 		if (error) {
 		  return (
 			<div className="Error">
-			<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
+			<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#2A2A2A' }}>
 			<div>The API is not loading. Have you set your API Key?</div>
 				<div className="myButton">
 					<Button variant="contained" onClick={this.setAPIKey}>Set API Key</Button>
@@ -165,14 +166,14 @@ export default class NewsList extends Component {
 		return (
 			<div className="NewsList">
 				<div className="header">
-					<Paper style={{ width: 1000, margin: 'auto', backgroundColor: '#eeeeee' }}>
+					<Paper style={{ width: 1000, margin: 'auto', backgroundColor: '#2A2A2A' }}>
 						<h1>{this.state.query}</h1>
 					</Paper>
 				</div>
 				<div className="MyList">
 					<List>
 					{articles.map(article => (
-					    <Paper>
+					    <Paper style={{ backgroundColor: '#2A2A2A'}}>
 						  <ListItem alignItems="flex-start">
 							<ListItemAvatar>
 							  <Avatar alt={article.author} src={article.urlToImage}/>
@@ -185,14 +186,15 @@ export default class NewsList extends Component {
 							  }
 							  secondary={
 								<React.Fragment>
-								  <Typography
-									component="span"
-									variant="body2"
-									color="textPrimary"
+								  <Typography style={{
+									component: 'span',	
+									variant: 'body2',
+									color: '#eeeeee'
+								  }}
 								  >
 								  {article.author + " - "}
-								  </Typography>
 								  {article.description}
+								  </Typography>
 								</React.Fragment>
 							  }
 							/>

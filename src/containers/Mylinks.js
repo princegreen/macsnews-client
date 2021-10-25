@@ -38,7 +38,7 @@ export default class Mylinks extends Component {
     return (
       <div className="Mylinks">
         <div className="lander">
-		<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
+		<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#2A2A2A' }}>
 				<StyledIcon>
 					<MyLink />
 				</StyledIcon>
@@ -50,7 +50,7 @@ export default class Mylinks extends Component {
 		  </Paper>
 		  </div>
 			<div className="Paper">
-				<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#eeeeee' }}>
+				<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#2A2A2A' }}>
 					<a href="http://www.wikipedia.org" target="_blank" rel="noopener noreferrer" title="Wikipedia">Wikipedia</a>
 					<br></br>					
 					<br></br>
