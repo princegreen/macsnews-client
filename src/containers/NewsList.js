@@ -181,7 +181,7 @@ export default class NewsList extends Component {
 							<ListItemText 
 							  primary={
 							  <React.Fragment>
-								<a href={article.url} title={article.title} target="_blank" rel="noopener noreferrer">{article.title}</a>
+								<a href={article.url} title={article.title} target="_blank" rel="noopener noreferrer" style={{ color: '#f2f2f2'}}>{article.title}</a>
 							  </React.Fragment>
 							  }
 							  secondary={

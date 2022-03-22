@@ -51,25 +51,19 @@ export default class Mylinks extends Component {
 		  </div>
 			<div className="Paper">
 				<Paper style={{ width: 500, margin: 'auto', backgroundColor: '#2A2A2A' }}>
-					<a href="http://www.wikipedia.org" target="_blank" rel="noopener noreferrer" title="Wikipedia">Wikipedia</a>
+					<a href="http://www.wikipedia.org" target="_blank" rel="noopener noreferrer" title="Wikipedia" style={{ color: '#f2f2f2'}}>Wikipedia</a>
 					<br></br>					
 					<br></br>
-					<a href="http://www.sacredpie.com" target="_blank" rel="noopener noreferrer" title="Sacred Pie">Sacred Pie</a>
+					<a href="http://www.sacredpie.com" target="_blank" rel="noopener noreferrer" title="Sacred Pie" style={{ color: '#f2f2f2'}}>Sacred Pie</a>
 					<br></br>
 					<br></br>
-					<a href="http://www.shatteredstarlight.com" target="_blank" rel="noopener noreferrer" title="Shattered Starlight">Shattered Starlight</a>
-					<br></br>
-					<br></br>	
-					<a href="http://www.feywinds.com" target="_blank" rel="noopener noreferrer" title="Fey Winds">Fey Winds</a>
+					<a href="http://www.shatteredstarlight.com" target="_blank" rel="noopener noreferrer" title="Shattered Starlight" style={{ color: '#f2f2f2'}}>Shattered Starlight</a>
 					<br></br>
 					<br></br>	
-					<a href="http://www.xkcd.com" target="_blank" rel="noopener noreferrer" title="XKCD">XKCD</a>
+					<a href="http://www.feywinds.com" target="_blank" rel="noopener noreferrer" title="Fey Winds" style={{ color: '#f2f2f2'}}>Fey Winds</a>
 					<br></br>
 					<br></br>	
-					<a href="https://www.gov.mb.ca/covid19/updates/index.html" target="_blank" rel="noopener noreferrer" title="COVID Manitoba">COVID Manitoba</a>
-					<br></br>
-					<br></br>
-					<a href="https://www.gov.mb.ca/covid19/vaccine/" target="_blank" rel="noopener noreferrer" title="COVID Manitoba Vaccination Stats">COVID Manitoba Vaccination Stats</a>
+					<a href="http://www.xkcd.com" target="_blank" rel="noopener noreferrer" title="XKCD" style={{ color: '#f2f2f2'}}>XKCD</a>
 					<br></br>
 				</Paper>
 			</div>
