@@ -36,9 +36,7 @@ class App extends Component{
 							</Button>
 							<div className="App-leftlinks" style={{marginLeft: 'auto'}}>
 								<Button component={Link} to="/" color='secondary' style={{fontSize: '16px' }}>News</Button>
-								<Button component={Link} to="/NASAPoD" color='secondary' style={{fontSize: '16px' }}>NASA PoD</Button>
 								<Button component={Link} to="/Mylinks" color='secondary' style={{fontSize: '16px' }}>My Links</Button>
-								<a href="https://calendar.google.com" title="Google Calendar" target="_blank" rel="noopener noreferrer">My Calendar</a>
 							</div>
 						</Toolbar>
 					</AppBar>	

@@ -5,7 +5,12 @@ import Paper from '@material-ui/core/Paper';
 
 const headers = {
 	'x-rapidapi-host': process.env.REACT_APP_NASAPOD_HOST,
-	'x-rapidapi-key': process.env.REACT_APP_NASAPOD_KEY
+	'x-rapidapi-key': process.env.REACT_APP_NASAPOD_KEY,
+	'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT, OPTIONS',
+	'Access-Control-Allow-Origin': '*',
+	'Access-Control-Allow-Origin': 'http://localhost:3000/NASAPoD',
+	'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+
 };
 
 const charPoses = {
@@ -89,7 +94,7 @@ async componentDidMount() {
 		  <h3>Copyright</h3>
 		  <p>{PoD.copyright}</p>
 		  <h3>URL</h3>
-		  <a href={PoD.url} title="PoD URL">PoD URL</a>
+		  <a href={PoD.hdurl} title="PoD URL">PoD URL</a>
 		  </Paper>
         </div>
       </div>

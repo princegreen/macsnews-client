@@ -65,6 +65,11 @@ export default class Mylinks extends Component {
 					<br></br>	
 					<a href="http://www.xkcd.com" target="_blank" rel="noopener noreferrer" title="XKCD" style={{ color: '#f2f2f2'}}>XKCD</a>
 					<br></br>
+					<br></br>
+					<a href="https://apod.nasa.gov/apod/astropix.html" title="NASA APOD" target="_blank" rel="noopener noreferrer" style={{ color: '#f2f2f2'}}>NASA APOD</a>
+					<br></br>
+					<br></br>
+					<a href="https://calendar.google.com" title="Google Calendar" target="_blank" rel="noopener noreferrer" style={{ color: '#f2f2f2'}}>My Calendar</a>
 				</Paper>
 			</div>
 	</div>
